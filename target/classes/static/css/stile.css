@@ -1,0 +1,168 @@
+
+/* Aggiungi stili specifici per schermi più piccoli */
+@media only screen and (max-width: 600px) {
+    /* Aggiungi qui gli stili specifici per schermi più piccoli */
+}
+
+/* Stili per schermi di dimensioni comprese tra 601 e 1024 pixel (es. tablet) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Aggiungi qui gli stili specifici per tablet */
+}
+
+/* Stili per schermi di dimensioni superiori a 1024 pixel (es. desktop) */
+@media only screen and (min-width: 1025px) {
+    /* Aggiungi qui gli stili specifici per desktop */
+}
+
+body {
+    background-image:url("/images/sfondo siw-car.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Carattere di scrittura amato dagli utenti */
+}
+
+ .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Regola l'opacità qui */
+            z-index: -1;
+        }
+
+
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url('/images/background-image.jpg');
+            background-size: cover;
+            filter: blur(5px);
+        }
+
+#index {
+    background-color: #fff; /* Colore di sfondo bianco per l'elemento index */
+    padding: 20px; /* Aggiungi spazio intorno al contenuto */
+}
+
+/* Rimuovi la duplicazione delle regole per body e html, poiché possono essere combinate */
+html, body {
+    height: 100%;
+}
+
+/* Aggiungi stili specifici per schermi più piccoli */
+@media only screen and (max-width: 600px) {
+    /* Aggiungi qui gli stili specifici per schermi più piccoli */
+}
+
+/* Stili per schermi di dimensioni comprese tra 601 e 1024 pixel (es. tablet) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Aggiungi qui gli stili specifici per tablet */
+}
+
+/* Stili per schermi di dimensioni superiori a 1024 pixel (es. desktop) */
+@media only screen and (min-width: 1025px) {
+    /* Aggiungi qui gli stili specifici per desktop */
+}
+
+.login-button button:hover,
+.register-button button:hover {
+    cursor: pointer;
+    background-color: #3498db; /* Colore azzurro amato dagli utenti */
+}
+
+.login-button button,
+.register-button button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: #fff; /* Testo bianco */
+    background-color: #2ecc71; /* Colore verde amato dagli utenti */
+    border: none; /* Rimuove il bordo */
+}
+
+h1, h2, h3, h4, p, a, span {
+    color: #333; /* Colore testo scuro */
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+label {
+    width: 8em;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 55%;
+}
+
+.form-login,
+.form-register {
+    width: 300px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+
+        header {
+            background-color: rgb(0, 0, 0);
+            border-bottom-style: solid;
+            border-bottom-color: #000;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px; /* Altezza dell'header */
+        }
+
+.logo {
+    width: 30%;
+    position: relative;
+    z-index: 2;
+    margin-top: 18px;
+    margin-left: -60px;
+}
+
+.user-info a {
+    color: rgb(245, 255, 240); /* Colore testo scuro */
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FF0000;
+    margin-right: 10px;
+}
+
+.user-info span {
+    color: #000;
+    margin-bottom: 5px;
+}
