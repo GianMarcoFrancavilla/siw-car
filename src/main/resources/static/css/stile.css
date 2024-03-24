@@ -1,81 +1,66 @@
-
-/* Aggiungi stili specifici per schermi più piccoli */
-@media only screen and (max-width: 600px) {
-    /* Aggiungi qui gli stili specifici per schermi più piccoli */
-}
-
-/* Stili per schermi di dimensioni comprese tra 601 e 1024 pixel (es. tablet) */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Aggiungi qui gli stili specifici per tablet */
-}
-
-/* Stili per schermi di dimensioni superiori a 1024 pixel (es. desktop) */
-@media only screen and (min-width: 1025px) {
-    /* Aggiungi qui gli stili specifici per desktop */
-}
-
+/* Stili generali */
 body {
-    background-image:url("/images/sfondo siw-car.png");
+    background-image: url("/images/sfondo siw-car.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif; /* Carattere di scrittura amato dagli utenti */
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
 }
 
- .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Regola l'opacità qui */
-            z-index: -1;
-        }
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
 
-
-        .background-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background-image: url('/images/background-image.jpg');
-            background-size: cover;
-            filter: blur(5px);
-        }
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('/images/background-image.jpg');
+    background-size: cover;
+    filter: blur(5px);
+}
 
 #index {
-    background-color: #fff; /* Colore di sfondo bianco per l'elemento index */
-    padding: 20px; /* Aggiungi spazio intorno al contenuto */
+    background-color: #fff;
+    padding: 20px;
 }
 
-/* Rimuovi la duplicazione delle regole per body e html, poiché possono essere combinate */
 html, body {
     height: 100%;
 }
 
-/* Aggiungi stili specifici per schermi più piccoli */
+/* Stili per schermi più piccoli */
 @media only screen and (max-width: 600px) {
     /* Aggiungi qui gli stili specifici per schermi più piccoli */
 }
 
-/* Stili per schermi di dimensioni comprese tra 601 e 1024 pixel (es. tablet) */
+/* Stili per tablet */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
     /* Aggiungi qui gli stili specifici per tablet */
 }
 
-/* Stili per schermi di dimensioni superiori a 1024 pixel (es. desktop) */
+/* Stili per desktop */
 @media only screen and (min-width: 1025px) {
     /* Aggiungi qui gli stili specifici per desktop */
 }
 
+/* Stili per i pulsanti */
 .login-button button:hover,
 .register-button button:hover {
     cursor: pointer;
-    background-color: #3498db; /* Colore azzurro amato dagli utenti */
+    background-color: #3498db;
 }
 
 .login-button button,
@@ -85,13 +70,14 @@ html, body {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
-    color: #fff; /* Testo bianco */
-    background-color: #2ecc71; /* Colore verde amato dagli utenti */
-    border: none; /* Rimuove il bordo */
+    color: #fff;
+    background-color: #2ecc71;
+    border: none;
 }
 
+/* Stili per gli elementi testuali */
 h1, h2, h3, h4, p, a, span {
-    color: #333; /* Colore testo scuro */
+    color: #333;
     padding-left: 5px;
     text-decoration: none;
 }
@@ -122,6 +108,7 @@ input[type="password"] {
     width: 55%;
 }
 
+/* Stili per i form di login e registrazione */
 .form-login,
 .form-register {
     width: 300px;
@@ -129,18 +116,62 @@ input[type="password"] {
     text-align: center;
 }
 
+.form-login {
+    background-color:rgba(170, 181, 193,0.7);
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-        header {
-            background-color: rgb(0, 0, 0);
-            border-bottom-style: solid;
-            border-bottom-color: #000;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 50px; /* Altezza dell'header */
-        }
+.input-field {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.login-button button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background-color: #27ae60;
+}
+
+.register-button button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.register-button button:hover {
+    background-color: #2980b9;
+}
+
+/* Stili per l'header */
+header {
+    background-color: rgb(0, 0, 0);
+    border-bottom-style: solid;
+    border-bottom-color: #000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
 
 .logo {
     width: 30%;
@@ -151,7 +182,7 @@ input[type="password"] {
 }
 
 .user-info a {
-    color: rgb(245, 255, 240); /* Colore testo scuro */
+    color: rgb(245, 255, 240);
 }
 
 .user-info {
@@ -166,3 +197,74 @@ input[type="password"] {
     color: #000;
     margin-bottom: 5px;
 }
+
+.admin-page {
+    background-image: url("/images/sfondo admin siw-car.png");
+    /* Altri stili specifici per le pagine dell'admin */
+}
+
+/* Aggiungi questo al CSS principale */
+/* Stili per il testo */
+h1,
+h4,
+body {
+    color: white;
+    text-align: center;
+}
+body a:not(header a) {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+    text-decoration: none;
+    margin: 5px;
+}
+
+/* Stile per i collegamenti ipertestuali nel body al passaggio del mouse */
+.archive-consultation a:hover {
+    background-color: rgb(2, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    box-shadow: 0 0 35px rgb(2,255,255);
+}
+
+.admin-operations a:hover {
+    background-color: rgb(255, 127, 79);
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    box-shadow: 0 0 35px rgb(255, 127, 79);
+}
+
+/* Rimozione del sottolineato per i collegamenti ipertestuali */
+.archive-consultation a,
+.admin-operations a {
+    text-decoration: none;
+}
+
+/* Box per le operazioni dell'amministratore */
+.admin-operations {
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    border-style: solid;
+    border-color: coral;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    margin-top: 100px;
+}
+
+/* Box per la consultazione dell'archivio */
+.archive-consultation {
+    background-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+
